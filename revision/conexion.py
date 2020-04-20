@@ -4,12 +4,18 @@ import sys
 def instalar(package):
     subprocess.check_call([sys.executable, "-m", "pip", "install", package])
 
-def conectar():
-    pip install requests
-    pip install -r requirements.txt
+def instalar2(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", package])
+
+def importar():
     from firebase import firebase
-    print("Todo ok")
-    return
+
+# def conectar():
+#     pip install requests
+#     pip install -r requirements.txt
+#     from firebase import firebase
+#     print("Todo ok")
+#     return
 
 # class q1():
 #     def __init__(self):
