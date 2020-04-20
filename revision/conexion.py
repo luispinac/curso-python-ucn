@@ -1,3 +1,9 @@
+import subprocess
+import sys
+
+def instalar(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
 def conectar():
     pip install requests
     pip install -r requirements.txt
