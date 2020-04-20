@@ -1,0 +1,1 @@
+-e git://github.com/ozgur/python-firebase.git#egg=python-firebase
