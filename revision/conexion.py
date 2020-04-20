@@ -7,8 +7,20 @@ def instalar(package):
 def instalar2(package):
     subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", package])
 
-def importar():
+def configurarFirebase():
     from firebase import firebase
+    firebase2 = firebase.FirebaseApplication("https://python-ucn-2020.firebaseio.com/", None)
+    data = {
+        'Profesor': 'Luis Piña',
+        'Nombre': 'Andres Silva',
+        'Email': 'andres@alumnos.ucn.cl'
+    }
+
+
+def configurar():
+    instalar('requests')
+    instalar2('requirements.txt')
+    configurarFirebase()
 
 # def conectar():
 #     pip install requests
