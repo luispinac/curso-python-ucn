@@ -25,6 +25,17 @@ def configurar():
     }
     return fircon, data
 
+def check1():
+    try:
+        res = suma(3,4)
+        print(res)
+        if res == 7:
+            print("OK")
+        else: 
+            print("Error con la suma")
+    except:
+        print("funcion no implementada")
+
 # def conectar():
 #     pip install requests
 #     pip install -r requirements.txt
