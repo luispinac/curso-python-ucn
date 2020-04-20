@@ -10,17 +10,20 @@ def instalar2(package):
 def configurarFirebase():
     from firebase import firebase
     firebase2 = firebase.FirebaseApplication("https://python-ucn-2020.firebaseio.com/", None)
-    data = {
-        'Profesor': 'Luis Piña',
-        'Nombre': 'Andres Silva',
-        'Email': 'andres@alumnos.ucn.cl'
-    }
+    return firebase2
+    
 
 
 def configurar():
     instalar('requests')
     instalar2('requirements.txt')
-    configurarFirebase()
+    fircon = configurarFirebase()
+    data = {
+        'Profesor': 'Luis Piña',
+        'Nombre': 'Andres Silva',
+        'Email': 'andres@alumnos.ucn.cl'
+    }
+    return fircon, data
 
 # def conectar():
 #     pip install requests
